@@ -1,0 +1,7 @@
+**/*.js
+setupTests.ts
+src/tests/*
+**/*.spec.tsx
+**/*.spec.ts
+**/styled.tsx
+src/globalStyle.ts
