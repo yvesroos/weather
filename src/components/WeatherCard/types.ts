@@ -1,6 +1,6 @@
 import {
   ForecastApiResponseTransformed,
-  WeatherApiResponseTransformed
+  WeatherApiResponseTransformed,
 } from '../../types';
 
 export interface WeatherCardProps {

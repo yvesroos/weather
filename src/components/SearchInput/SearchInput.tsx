@@ -10,7 +10,7 @@ const SearchInput: React.FC<SearchProps> = ({
   items,
   maxResults = 5,
   isLoading,
-  placeholder
+  placeholder,
 }) => {
   const suggestionRef = useRef<HTMLDivElement>(null);
   const [showSuggestions, setShowSuggestions] = useState(false);

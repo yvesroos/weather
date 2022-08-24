@@ -23,5 +23,5 @@ export const useQueryResult: UseQueryResult<any, any> = {
   remove: jest.fn(),
   errorUpdateCount: 0,
   isPaused: false,
-  fetchStatus: 'idle'
+  fetchStatus: 'idle',
 };

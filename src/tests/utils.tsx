@@ -12,22 +12,22 @@ export const handlers = [
   }),
   rest.get('*/forecast', (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(forecast));
-  })
+  }),
 ];
 
-export function renderWithProviders (ui: JSX.Element) {
+export function renderWithProviders(ui: JSX.Element) {
   const queryClient = new QueryClient({
     logger: {
       log: console.log,
       warn: console.warn,
-      error: console.warn
+      error: console.warn,
     },
     defaultOptions: {
       queries: {
         retry: false,
-        cacheTime: Infinity
-      }
-    }
+        cacheTime: Infinity,
+      },
+    },
   });
 
   return render(

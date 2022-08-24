@@ -9,13 +9,13 @@ import { GlobalStyles } from './globalStyle';
 import { theme } from './theme';
 
 const persister = createSyncStoragePersister({
-  storage: window.localStorage
+  storage: window.localStorage,
 });
 
 const queryClient = new QueryClient({
   defaultOptions: {
-    queries: { staleTime: SIX_HOURS, retry: false, cacheTime: ONE_HOUR }
-  }
+    queries: { staleTime: SIX_HOURS, retry: false, cacheTime: ONE_HOUR },
+  },
 });
 
 const Bootstrap: FC = () => {

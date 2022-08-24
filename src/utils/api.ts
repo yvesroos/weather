@@ -5,32 +5,32 @@ export const api = {
     axios.get<T>(url, {
       headers: {
         'Content-Type': 'application/json',
-        ...params?.headers
+        ...params?.headers,
       },
-      ...params
+      ...params,
     }),
   post: <T>(url: string, data: any, params?: AxiosRequestConfig) =>
     axios.post<T>(url, data, {
       headers: {
         'Content-Type': 'application/json',
-        ...params?.headers
+        ...params?.headers,
       },
-      ...params
+      ...params,
     }),
   patch: <T>(url: string, data: any, params?: AxiosRequestConfig) =>
     axios.patch<T>(url, data, {
       headers: {
         'Content-Type': 'application/json',
-        ...params?.headers
+        ...params?.headers,
       },
-      ...params
+      ...params,
     }),
   delete: <T>(url: string, params?: AxiosRequestConfig) =>
     axios.delete<T>(url, {
       headers: {
         'Content-Type': 'application/json',
-        ...params?.headers
+        ...params?.headers,
       },
-      ...params
-    })
+      ...params,
+    }),
 };

@@ -35,7 +35,7 @@ describe('WeatherSection', () => {
     const error = 'User denied Geolocation';
     const location = {
       ...useQueryResult,
-      data: { latitude: 1, longitude: 1, error }
+      data: { latitude: 1, longitude: 1, error },
     };
     jest
       .spyOn(placesQueries, 'useGetCurrentLocation')

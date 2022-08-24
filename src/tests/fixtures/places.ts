@@ -18,8 +18,8 @@ export const places = [
       county: 'Lisbon',
       'ISO3166-2-lvl6': 'PT-11',
       country: 'Portugal',
-      country_code: 'pt'
-    }
+      country_code: 'pt',
+    },
   },
   {
     place_id: 297407185,
@@ -41,8 +41,8 @@ export const places = [
       state: 'Iowa',
       'ISO3166-2-lvl4': 'US-IA',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 297036997,
@@ -64,8 +64,8 @@ export const places = [
       state: 'North Dakota',
       'ISO3166-2-lvl4': 'US-ND',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 297519941,
@@ -89,8 +89,8 @@ export const places = [
       state: 'Illinois',
       'ISO3166-2-lvl4': 'US-IL',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 298247700,
@@ -113,8 +113,8 @@ export const places = [
       'ISO3166-2-lvl4': 'US-NH',
       postcode: '03585',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 297107194,
@@ -136,8 +136,8 @@ export const places = [
       state: 'Ohio',
       'ISO3166-2-lvl4': 'US-OH',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 299377569,
@@ -161,8 +161,8 @@ export const places = [
       'ISO3166-2-lvl4': 'US-NY',
       postcode: '13658',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 298627710,
@@ -184,8 +184,8 @@ export const places = [
       state: 'Maine',
       'ISO3166-2-lvl4': 'US-ME',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 298651238,
@@ -207,8 +207,8 @@ export const places = [
       state: 'Connecticut',
       'ISO3166-2-lvl4': 'US-CT',
       country: 'United States',
-      country_code: 'us'
-    }
+      country_code: 'us',
+    },
   },
   {
     place_id: 90913016,
@@ -231,50 +231,50 @@ export const places = [
       'ISO3166-2-lvl4': 'US-MD',
       postcode: '21765',
       country: 'United States',
-      country_code: 'us'
-    }
-  }
+      country_code: 'us',
+    },
+  },
 ];
 
 export const placesTransformed = [
   {
     value: { id: 298475960, lat: '38.7259284', lon: '-9.137382' },
-    label: 'Lisbon, Portugal'
+    label: 'Lisbon, Portugal',
   },
   {
     value: { id: 297407185, lat: '41.9211165', lon: '-91.3854913' },
-    label: 'Lisbon, Iowa, United States'
+    label: 'Lisbon, Iowa, United States',
   },
   {
     value: { id: 297036997, lat: '46.441634', lon: '-97.68121' },
-    label: 'Lisbon, North Dakota, United States'
+    label: 'Lisbon, North Dakota, United States',
   },
   {
     value: { id: 297519941, lat: '41.4814196', lon: '-88.482293' },
-    label: 'Illinois, United States'
+    label: 'Illinois, United States',
   },
   {
     value: { id: 298247700, lat: '44.2135187', lon: '-71.9107884' },
-    label: 'New Hampshire, United States'
+    label: 'New Hampshire, United States',
   },
   {
     value: { id: 297107194, lat: '40.7720044', lon: '-80.7681336' },
-    label: 'Ohio, United States'
+    label: 'Ohio, United States',
   },
   {
     value: { id: 299377569, lat: '44.727467', lon: '-75.321236' },
-    label: 'New York, United States'
+    label: 'New York, United States',
   },
   {
     value: { id: 298627710, lat: '44.0314649', lon: '-70.1044975' },
-    label: 'Lisbon, Maine, United States'
+    label: 'Lisbon, Maine, United States',
   },
   {
     value: { id: 298651238, lat: '41.5866851', lon: '-72.0207809' },
-    label: 'Lisbon, Connecticut, United States'
+    label: 'Lisbon, Connecticut, United States',
   },
   {
     value: { id: 90913016, lat: '39.3369974', lon: '-77.0736153' },
-    label: 'Maryland, United States'
-  }
+    label: 'Maryland, United States',
+  },
 ];

@@ -13,7 +13,7 @@ export const useCitiesByQuery = (query: string) =>
     },
     {
       enabled: !!query,
-      select: transformPlaces
+      select: transformPlaces,
     }
   );
 
@@ -30,6 +30,6 @@ export const useGetCurrentLocation = (
     {
       staleTime: 1,
       cacheTime: 1,
-      enabled
+      enabled,
     }
   );

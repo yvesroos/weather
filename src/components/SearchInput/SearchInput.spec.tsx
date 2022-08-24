@@ -3,7 +3,7 @@ import SearchInput from './SearchInput';
 
 const items = [
   { label: 'one', value: 1 },
-  { label: 'two', value: 2 }
+  { label: 'two', value: 2 },
 ];
 
 describe('SearchInput', () => {

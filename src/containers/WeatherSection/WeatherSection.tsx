@@ -6,7 +6,7 @@ import { SimpleLocationCoordinates } from '../../types';
 const WeatherSection = ({
   location,
   currentLocation,
-  onClose
+  onClose,
 }: {
   location?: SimpleLocationCoordinates | undefined;
   currentLocation?: boolean;
@@ -15,7 +15,7 @@ const WeatherSection = ({
   const {
     data: userLocation,
     isLoading: isLoadingLocation,
-    isFetching: isFetchingLocation
+    isFetching: isFetchingLocation,
   } = useGetCurrentLocation(undefined, currentLocation);
   const { data, isLoading, isFetching, error } =
     useOpenWeatherAndForecastByLatLon(

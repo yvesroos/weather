@@ -4,7 +4,7 @@ export const ONE_DAY = 24 * 60 * 60 * 1000;
 
 export const defaultLocation = {
   latitude: 38.7259284,
-  longitude: -9.137382
+  longitude: -9.137382,
 };
 
 export enum QueryKeys {

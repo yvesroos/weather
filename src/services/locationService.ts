@@ -4,7 +4,7 @@ export const getUserLocation = async (
   options: PositionOptions = {
     enableHighAccuracy: false,
     maximumAge: Infinity,
-    timeout: Infinity
+    timeout: Infinity,
   },
   defaultLocationOnFailed: SimpleLocationCoordinates = {
     latitude:
@@ -13,7 +13,7 @@ export const getUserLocation = async (
     longitude:
       defaultLocation.longitude ||
       parseFloat(process.env.REACT_APP_DEFAULT_LON || '0'),
-    error: ''
+    error: '',
   }
 ) =>
   new Promise((resolve: (value: SimpleLocationCoordinates) => void) => {
@@ -23,13 +23,13 @@ export const getUserLocation = async (
       resolve({
         latitude,
         longitude,
-        error: undefined
+        error: undefined,
       });
     };
     const handleError = (error: GeolocationPositionError | Error) => {
       resolve({
         ...defaultLocationOnFailed,
-        error: error.message
+        error: error.message,
       });
     };
     geolocation.getCurrentPosition(handleSuccess, handleError, options);

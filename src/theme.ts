@@ -11,5 +11,5 @@ export const theme: Theme = {
   secondaryColor: '#fca311',
   greyColor: '#e5e5e5',
   bgColor: '#ffffff',
-  borderRadius: '4px'
+  borderRadius: '4px',
 };

@@ -14,12 +14,12 @@ export const useOpenWeatherAndForecastByLatLon = (
     async () => {
       const [weather, forecast] = await Promise.all([
         fetchWeather(lat, lon, units),
-        fetchForecast(lat, lon, units)
+        fetchForecast(lat, lon, units),
       ]);
       return { weather: weather.data, forecast: forecast.data };
     },
     {
       enabled: !!lat && !!lon,
-      select: transformWeatherAndForecast
+      select: transformWeatherAndForecast,
     }
   );
