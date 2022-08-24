@@ -10,6 +10,13 @@ process.env.REACT_APP_DEFAULT_LON = '0';
 
 export const server = setupServer(...handlers);
 
-beforeAll(() => server.listen());
+beforeAll(() => {
+  jest.useFakeTimers();
+  jest.setSystemTime(new Date(2022, 7, 20));
+  server.listen();
+});
 afterEach(() => server.resetHandlers());
-afterAll(() => server.close());
+afterAll(() => {
+  server.close();
+  jest.useRealTimers();
+});

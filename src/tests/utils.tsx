@@ -1,8 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render } from '@testing-library/react';
 import { rest } from 'msw';
-import * as React from 'react';
-import { forecastTransformed, places, weather } from './fixtures';
+import { forecast, places, weather } from './fixtures';
 
 export const handlers = [
   rest.get('*/search', (req, res, ctx) => {
@@ -12,7 +11,7 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(weather));
   }),
   rest.get('*/forecast', (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(forecastTransformed));
+    return res(ctx.status(200), ctx.json(forecast));
   })
 ];
 
